@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Garden Sign-Up</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            display: flex;
+            width: 800px;
+            height: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .left, .right {
+            padding: 20px;
+            flex: 1;
+        }
+        .left {
+            background-color: #fdf0dd;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .left img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .left p {
+            color: #2e8b57;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .left span {
+            color: #2e8b57;
+            font-size: 14px;
+        }
+        .right {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right h2 {
+            color: #2e8b57;
+            margin-bottom: 20px;
+            margin-left: 25px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .input-group input {
+            border: none;
+            padding: 10px;
+            flex: 1;
+        }
+        .input-group svg {
+            padding: 10px;
+            background-color: #f0f0f0;
+            color: #999;
+        }
+        .btn {
+            background-color: #2e8b57;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .sign-in {
+            text-align: center;
+            font-size: 14px;
+        }
+        .sign-in a {
+            color: #2e8b57;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="left">
+            <img src="Screenshot (32).png" alt="Plant Image">
+            <p>Plant the seeds of community and growth - join us in cultivating a greener tomorrow</p>
+            <span>Sign up now</span>
+        </div>
+        <div class="right">
+            <h2>Join our community garden</h2>
+            <div class="input-group">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 21V19C21 17.9391 20.5786 16.9217 19.8284 16.1716C19.0783 15.4214 18.0609 15 17 15H7C5.93913 15 4.92172 15.4214 4.17157 16.1716C3.42143 16.9217 3 17.9391 3 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="input-group">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 2H8C5.79086 2 4 3.79086 4 6V18C4 20.2091 5.79086 22 8 22H16C18.2091 22 20 20.2091 20 18V6C20 3.79086 18.2091 2 16 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 6L12 13L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-group">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 16.92V21C22 21.5304 21.7893 22.0391 21.4142 22.4142C21.0391 22.7893 20.5304 23 20 23H4C3.46957 23 2.96086 22.7893 2.58579 22.4142C2.21071 22.0391 2 21.5304 2 21V16.92C2.00059 16.406 2.15236 15.905 2.43457 15.467C2.71678 15.0291 3.11721 14.6724 3.6 14.43L11 10.89C11.2878 10.7501 11.6109 10.676 11.9383 10.676C12.2657 10.676 12.5888 10.7501 12.8766 10.89L20.29 14.43C20.7728 14.6724 21.1732 15.0291 21.4554 15.467C21.7376 15.905 21.8894 16.406 21.89 16.92H22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 10.676L3.6 6.898C3.11721 6.65561 2.71678 6.2989 2.43457 5.86099C2.15236 5.42307 2.00059 4.92207 2 4.408V3C2 2.46957 2.21071 1.96086 2.58579 1.58579C2.96086 1.21071 3.46957 1 4 1H20C20.5304 1 21.0391 1.21071 21.4142 1.58579C21.7893 1.96086 22 2.46957 22 3V4.408C22.0006 4.92207 21.8488 5.42307 21.5666 5.86099C21.2844 6.2989 20.884 6.65561 20.4 6.898L12 10.676Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input type="tel" placeholder="Phone Number">
+            </div>
+            <button class="btn">Sign Up</button>
+            <div class="sign-in">
+                Already have an account? <a href="#">Sign in</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
